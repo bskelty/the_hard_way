@@ -7,3 +7,4 @@ puts "I could have code like this." # And the comment after is ignored.
 # puts "This won't run"
 
 Puts "This will run"
+puts "Tester"
