@@ -9,3 +9,4 @@ puts "I could have code like this." # And the comment after is ignored.
 puts "This will run"
 puts "Tester"
 puts "test2"
+puts "test3"
