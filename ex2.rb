@@ -8,3 +8,4 @@ puts "I could have code like this." # And the comment after is ignored.
 
 Puts "This will run"
 puts "Tester"
+puts "test2"
