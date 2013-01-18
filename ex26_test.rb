@@ -12,13 +12,13 @@ module Ex25
   
   # Prints the first word after popping it off.
   def self.puts_first_word(words)
-      word = words.pop(0)
+      word = words.shift
       puts word
   end
   
   # Prints the last word after popping it off.
   def self.puts_last_word(words)
-      word = words.pop()
+      word = words.pop
       puts word
   end
   
