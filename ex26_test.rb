@@ -12,13 +12,13 @@ module Ex25
   
   # Prints the first word after popping it off.
   def self.puts_first_word(words)
-      word = words.pop(0)
+      word = words.shift
       puts word
   end
   
   # Prints the last word after popping it off.
   def self.puts_last_word(words)
-      word = words.pop()
+      word = words.pop
       puts word
   end
   
@@ -83,7 +83,7 @@ puts "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
 
 
 
-sentence = "All god\tthings come to those who weight."
+sentence = "All good\tthings come to those who weight."
 
 words = Ex25.break_words(sentence)
 sorted_words = Ex25.sort_words(words)
