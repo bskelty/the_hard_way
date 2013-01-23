@@ -28,7 +28,7 @@ puts "test" == "testing"
 puts "9. I thought it would be #{false}"
 
 puts 1 != 0 and 2 == 1
-puts "10. I thought it would be #{true}"
+puts "10. I thought it would be #{false}"
 
 puts "test" != "testing"
 puts "11. I thought it would be #{true}"
