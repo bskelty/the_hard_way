@@ -1,0 +1,76 @@
+# create a mapping of states and abbreviation
+states = {
+	'Oregon' => 'OR',
+	'Florida' => 'FL',
+	'California' => 'CA',
+	'New York' => 'NY',
+	'Michigan' => 'MI'
+}
+
+# reate a basic set of states and some cities in them
+cities = {
+	'CA' => 'San Francisco',
+	'MI' => 'Detroit',
+	'FL' => 'Jacksonville'
+}
+
+# add some more cities
+cities['NY'] = 'New York'
+cities['OR'] = 'Portland'
+
+#puts out some cities
+puts '-' * 10
+puts "NY state has: ", cities['NY']
+puts "OR state has: ", cities['OR']
+
+#puts some states
+puts '-' * 10
+puts "Michigan abbreviation is: ", states['Michigan']
+puts "Florida abbreviation is: ", states['Florida']
+
+# do it by using the states then cities dict
+puts '-' * 10
+puts "Michigan has: ", cities[states['Michigan']]
+puts "Florida has : ", cities[states['Florida']]
+
+# puts every states abbreviation
+puts '-' * 10
+for state, abbrev in states
+	puts "%s is abbreviated %s" % [state, abbrev]
+end
+
+# puts every city and state
+puts '-' * 10
+for abbrev, city in cities
+	puts "%s has the city %s" % [abbrev, city]
+end
+
+# now do both at the same time
+puts '-' * 10
+for state, abbrev in states
+	puts "%s state is abbreviated %s and has city %s" % [state, abbrev, cities[abbrev]]
+end
+
+puts '-' * 10
+# if its not there you get nil
+state = states['Texas']
+
+if not state
+	puts "Sorry, no Texas."
+end
+
+# get a city with a default value
+city = cities['TX'] || 'Does Not Exist'
+puts "The city fot the state 'TX is %s" % city
+
+
+
+
+
+
+
+
+
+
+
+
