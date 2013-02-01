@@ -18,7 +18,8 @@ class Woodstock < Level
 
   def jimi_hendrix()
     puts "You did not take the brown acid and witnessed Jimi Hendrix' famous rendition of the Star Spangled Banner."
-    puts "Not only did get to see Hendrix play, but he invites you back to his tour bus for the after party.  You are awesome!!!"
+    puts "Not only did get to see Hendrix play, but he invites you back to his tour bus for the after party, and you actually become his personal bodygurad."
+    crazy_fan()
   end
 
 
